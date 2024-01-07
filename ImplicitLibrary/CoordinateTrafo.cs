@@ -33,6 +33,7 @@
 //
 
 
+using System.Collections.Generic;
 using System.Numerics;
 using Leap71.ShapeKernel;
 
@@ -42,7 +43,7 @@ namespace Leap71
 	{
         public interface ICoordinateTrafo
         {
-            public void Apply(out float fX, out float fY, out float fZ, Vector3 vecPt);
+            void Apply(out float fX, out float fY, out float fZ, Vector3 vecPt);
         }
 
         public class ScaleTrafo : ICoordinateTrafo

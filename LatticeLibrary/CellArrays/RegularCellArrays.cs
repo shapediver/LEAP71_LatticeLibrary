@@ -33,6 +33,8 @@
 //
 
 
+using System;
+using System.Collections.Generic;
 using System.Numerics;
 using PicoGK;
 
@@ -45,7 +47,7 @@ namespace Leap71
     {
         public interface ICellArray
         {
-            public List<IUnitCell> aGetUnitCells();
+            List<IUnitCell> aGetUnitCells();
         }
 
         public class RegularCellArray : ICellArray

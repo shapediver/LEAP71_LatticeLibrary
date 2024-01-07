@@ -33,6 +33,7 @@
 //
 
 
+using System.Collections.Generic;
 using System.Numerics;
 using PicoGK;
 
@@ -45,10 +46,10 @@ namespace Leap71
     {
         public interface IUnitCell
         {
-            public List<Vector3>    aGetCornerPoints();
-            public Vector3          vecGetCellCentre();
-            public BBox3            oGetCellBounding();
-            public void             PreviewUnitCell();
+            List<Vector3>    aGetCornerPoints();
+            Vector3          vecGetCellCentre();
+            BBox3            oGetCellBounding();
+            void             PreviewUnitCell();
         }
 
         /// <summary>

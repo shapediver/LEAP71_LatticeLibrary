@@ -32,6 +32,7 @@
 // limitations under the License.   
 //
 
+using PicoGK;
 
 namespace Leap71
 {
@@ -41,7 +42,7 @@ namespace Leap71
 	{
         public interface IRawTPMSPattern
         {
-            public float fGetSignedDistance(float fX, float fY, float fZ);
+            float fGetSignedDistance(float fX, float fY, float fZ);
         }
 
         public class RawGyroidTPMSPattern : IRawTPMSPattern
