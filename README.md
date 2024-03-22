@@ -31,21 +31,16 @@ using Leap71.ShapeKernel;
 using Leap71.LatticeLibraryExamples;
 using PicoGK;
 
-string strOutputFolder = "/Users/youruser/Documents/Code++/LatticeTests";
-
 try
 {
     PicoGK.Library.Go(
         0.5f,
-        LatticeLibraryShowCase.RegularTask,
-        strOutputFolder
-        );
+        LatticeLibraryShowCase.RegularTask);
 }
 catch (Exception e)
 {
-    Library.Log("Failed to run Task.");
-    Library.Log(e.ToString());
-    Library.oViewer().SetBackgroundColor(Cp.clrWarning);
+    Console.WriteLine("Failed to run Task.");
+    Console.WriteLine(e.ToString());
 }
 ```
 
